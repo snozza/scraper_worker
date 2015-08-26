@@ -1,0 +1,19 @@
+{
+  "name": "scraper_worker",
+  "version": "1.0.0",
+  "description": "Example app/scraper worker with message queue.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://snozza@github.com/snozza/scraper_worker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snozza/scraper_worker/issues"
+  },
+  "homepage": "https://github.com/snozza/scraper_worker#readme"
+}
