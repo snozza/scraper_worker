@@ -5,5 +5,5 @@ echo "cleaning up dist folder....."
 rm -rf dist/*
 
 echo "transpiling to ES5 with babel....."
-babel lib/app --out-dir dist
+babel lib --out-dir dist
 
