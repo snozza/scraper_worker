@@ -25,16 +25,6 @@ function articlesRouter(app) {
 
   function addArticle(req, res, next) {
     app
-      .addArticle(req.params.articleId)
-      .then(sendLink, next);
-
-    function sendLink(id) {
-      return res.json({link: '/articles/' + id + '.json'});
-    }
-  }
-
-  function showArticle(req, res, next) {
-    app
       .getArticle(req.params.articleId)
       .then(sendArticle, next);
 
@@ -66,7 +56,7 @@ function articlesRouter(app) {
     .post('/articles/:articleId/vote.json', upvoteArticle)
     .post('/articles.json', addArticle)
     .use(articleErrors)
-    .use(express.static(path.join(__dirname, 'public')));
+    .use(express.static(path.join(__dirname, 'public')))
 }
 
 export default articlesRouter;
