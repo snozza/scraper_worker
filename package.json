@@ -4,7 +4,9 @@
   "description": "Example app/scraper worker with message queue.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nf start",
+    "build": "./bin/build_js.sh"
   },
   "repository": {
     "type": "git",
